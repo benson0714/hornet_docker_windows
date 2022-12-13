@@ -6,8 +6,6 @@ disqus: Benson
 windows 下的hornet docker 建置
 ===
 
-[TOC]
-
 ## 1. gohornet
 
 ### 1.1 clone:
@@ -15,11 +13,12 @@ windows 下的hornet docker 建置
 ```shell=
 git clone https://github.com/gohornet/hornet ; cd hornet ; git checkout production
 ```
-
+- 使用下面指令可直接跳到第3步
+```shell=
+git clone https://github.com/benson0714/hornet_docker_windows
+```
 
 ## 2. 修改檔案
-可參考 : https://github.com/benson0714/hornet_docker_windows
-
 ### 2.1 確認必要檔案
 - 需要新增一個docker-compose.yml檔 (2.2)
 - 需要新增config.json檔，可參考config_defaults.json去設定 (2.3)
@@ -61,6 +60,8 @@ services:
       - ./snapshots/mainnet:/app/snapshots/mainnet
 ```
 ### 2.3 修改config.json內容
+- dashboard會需要先創密碼才可以進行登入，可參考 :
+https://wiki.iota.org/hornet/how_tos/using_docker#create-username-and-password-for-the-hornet-dashboard
 ```json
 {
   "restAPI": {
