@@ -17,7 +17,7 @@ git clone https://github.com/gohornet/hornet ; cd hornet ; git checkout producti
 ```
 - 使用下面指令可直接跳到第3步
 ```shell=
-git clone https://github.com/benson0714/hornet_docker_w
+git clone https://github.com/benson0714/hornet_docker_windows_linux_amd64
 ```
 
 ## 2. 修改檔案
