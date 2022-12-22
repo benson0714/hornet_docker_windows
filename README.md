@@ -6,19 +6,22 @@ disqus: Benson
 windows 下的hornet docker 建置
 ===
 
+[TOC]
+
 ## 1. gohornet
 
-### 1.1 clone:
+### 1.1 clone : 有兩種方法:
 - git clone hornet，取得需要的檔案
 ```shell=
 git clone https://github.com/gohornet/hornet ; cd hornet ; git checkout production
 ```
 - 使用下面指令可直接跳到第3步
 ```shell=
-git clone https://github.com/benson0714/hornet_docker_windows
+git clone https://github.com/benson0714/hornet_docker_w
 ```
 
 ## 2. 修改檔案
+
 ### 2.1 確認必要檔案
 - 需要新增一個docker-compose.yml檔 (2.2)
 - 需要新增config.json檔，可參考config_defaults.json去設定 (2.3)
@@ -339,6 +342,14 @@ https://wiki.iota.org/hornet/how_tos/using_docker#create-username-and-password-f
   }
 }
 ```
+
+### 2.4 linux需要修改docker取用資料夾權限!!! (windows跳過)
+```shell=
+sudo chown 65532:65532 mainnetdb
+sudo chown 65532:65532 p2pstore
+sudo chown -R 65532:65532 snapshots
+```
+
 ## 3. docker-compose 安裝
 ```shell=
 docker-compose up -d
