@@ -3,7 +3,7 @@ title: 'windows 下的hornet docker 建置'
 disqus: Benson
 ---
 
-windows 下的hornet docker 建置
+resberrypi (arm64)下的hornet docker 建置
 ===
 
 [TOC]
@@ -17,7 +17,7 @@ git clone https://github.com/gohornet/hornet ; cd hornet ; git checkout producti
 ```
 - 使用下面指令可直接跳到第3步
 ```shell=
-git clone https://github.com/benson0714/hornet_docker_windows_linux_amd64
+git clone https://github.com/benson0714/hornet_docker_windows_linux_amd64.git
 ```
 
 ## 2. 修改檔案
