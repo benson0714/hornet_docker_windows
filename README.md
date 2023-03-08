@@ -1,5 +1,5 @@
 ---
-title: 'windows 下的hornet docker 建置'
+title: 'resberrypi (arm64) 下的hornet docker 建置'
 disqus: Benson
 ---
 
